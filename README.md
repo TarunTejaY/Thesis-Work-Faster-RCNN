@@ -285,3 +285,5 @@ I have followed the below mentioned blog for execution of the model through Goog
     !python /content/gdrive/MyDrive/tensorflow/models/research/object_detection/model_main.py --model_dir = /content/gdrive/MyDrive/tensorflow/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28 --pipeline_config_path=/content/gdrive/MyDrive/tensorflow/models/research/object_detection/training/pipeline.config --checkpoint_dir=/content/gdrive/MyDrive/tensorflow/models/research/object_detection/training
 
 •	Change the model name in command with respect to the model you use like faster_rcnn_resnet50_coco_2018_01_28 or faster_rcnn_resnet101_coco_2018_01_28. 
+
+•   If you follow the above mentioned steps, You can easily execute Faster RCNN model.
