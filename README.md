@@ -13,15 +13,15 @@ If it is done, Install two github repositories inorder to work with the model.
 
     https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10 
 
-After the installation we need to exract those files to the local folder in c-drive by naming it as tensorflow1. The copy the models-master folder to tensorflow1 and rename it as models.
+After downloading these repositories, we need to copy the models-master folder to the local folder in c-drive by naming the folder as tensorflow1. Rename the models-master as models.
 
-Then after copy the folders and files extracted from edjeelectronics to object detection folder in models
+Then after copy the folders and files extracted from edjeelectronics to object detection folder in models.
+
 Download the model you would like to work (in my case it is faster rcnn) from the below mentioned repository.
 
         https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md
         
 Extract the tar file and copy it to the object detection folder.
-
 
 
 **Training the model**
@@ -45,7 +45,7 @@ The steps that i followed for installing packages using Anaconda prompt is mainl
 
 ·	If it is already existing press "y" to create a new environment.
 
-·	Activate tensorflow1 buy the following command.
+·	Activate tensorflow1 by the following command.
 
     Activate tensorflow1
 
@@ -91,7 +91,7 @@ Do this by issuing the following commands (from any directory):
     protoc --python_out=. .\object_detection\protos\anchor_generator.proto .\object_detection\protos\argmax_matcher.proto .\object_detection\protos\bipartite_matcher.proto .\object_detection\protos\box_coder.proto .\object_detection\protos\box_predictor.proto .\object_detection\protos\eval.proto .\object_detection\protos\faster_rcnn.proto .\object_detection\protos\faster_rcnn_box_coder.proto .\object_detection\protos\grid_anchor_generator.proto .\object_detection\protos\hyperparams.proto .\object_detection\protos\image_resizer.proto .\object_detection\protos\input_reader.proto .\object_detection\protos\losses.proto .\object_detection\protos\matcher.proto .\object_detection\protos\mean_stddev_box_coder.proto .\object_detection\protos\model.proto .\object_detection\protos\optimizer.proto .\object_detection\protos\pipeline.proto .\object_detection\protos\post_processing.proto .\object_detection\protos\preprocessor.proto .\object_detection\protos\region_similarity_calculator.proto .\object_detection\protos\square_box_coder.proto .\object_detection\protos\ssd.proto .\object_detection\protos\ssd_anchor_generator.proto .\object_detection\protos\string_int_label_map.proto .\object_detection\protos\train.proto .\object_detection\protos\keypoint_box_coder.proto .\object_detection\protos\multiscale_anchor_generator.proto .\object_detection\protos\graph_rewriter.proto .\object_detection\protos\calibration.proto .\object_detection\protos\flexible_grid_anchor_generator.proto
 
 
-·	Then you can see protobuff files created in protos folder in object detection.
+·	Then you can see protobuff files created in protos folder in object detection in the form of .pb files.
 
 ·	Execute the following commands to run setup.py file.
 
@@ -101,7 +101,8 @@ Do this by issuing the following commands (from any directory):
      python setup.py install
 
 ·	Note: if you cannot process the above install command try executing below command.
-python setup.py install --user
+           
+     python setup.py install --user
 
 ·	If you have labeled the images into xml file then you can divide the train images and validation images in train the test folders in the images folder in object_detection.
 
@@ -111,7 +112,7 @@ python setup.py install --user
  
     python xml_to_csv.py
  
-·	open the generate_tfrecord.py using text editor and the change the label()
+·	open the generate_tfrecord.py using text editor and the change the label(). In my case i am detecting only pipe so i have give pipe. If you need to detect multiple things then you can gives all the labels you want to detect
 
     # TO-DO replace this with label map
     def class_text_to_int(row_label):
