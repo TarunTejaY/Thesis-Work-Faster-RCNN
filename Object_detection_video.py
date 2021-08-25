@@ -21,6 +21,7 @@ import os
 import cv2
 import numpy as np
 import tensorflow as tf
+from google.colab.patches import cv2_imshow
 import sys
 
 # This is needed since the notebook is stored in the object_detection folder.
@@ -115,7 +116,7 @@ while(video.isOpened()):
         min_score_thresh=0.60)
 
     # All the results have been drawn on the frame, so it's time to display it.
-    cv2.imshow('Object detector', frame)
+    cv2.imshow(frame)
 
     # Press 'q' to quit
     if cv2.waitKey(1) == ord('q'):
