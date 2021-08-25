@@ -217,7 +217,7 @@ I have followed the below mentioned blog for execution of the model through Goog
 
     tensorflow\models\research\object_detection\samples\configs
 
-•	After replacing the config file then open it with text editor. Change the number of classes to 1 and next is explained in the step below.
+•	After replacing the config file then open it with text editor. Change the number of classes to 1 and next changes needed to be done are explained in the step below.
 
 •	Line 106. Change fine_tune_checkpoint to:
 
