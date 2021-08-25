@@ -104,7 +104,16 @@ Do this by issuing the following commands (from any directory):
            
      python setup.py install --user
 
-·	If you have labeled the images into xml file then you can divide the train images and validation images in train the test folders in the images folder in object_detection.
+·   If you have not labled the images then you should do it by the Labelimg. It is a tool used to label the images. The links to access labelImg is given below.
+·   For Downloading you can of the link given below.
+    
+    https://www.dropbox.com/s/tq7zfrcwl44vxan/windows_v1.6.0.zip?dl=1
+    
+ ·  If you want to access the github foloow the below link.
+
+    https://github.com/tzutalin/labelImg
+
+·	If you have labeled the images into xml file then you can divide the train images and validation images in train the test folders in the images folder within object_detection.
 
 ·	Then run the following two commands one after another.
 
