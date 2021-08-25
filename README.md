@@ -109,7 +109,7 @@ Do this by issuing the following commands (from any directory):
     
     https://www.dropbox.com/s/tq7zfrcwl44vxan/windows_v1.6.0.zip?dl=1
     
- ·  If you want to access the github foloow the below link.
+ ·  If you want to access the github follow the below link.
 
     https://github.com/tzutalin/labelImg
 
