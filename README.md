@@ -147,6 +147,8 @@ I have followed the below mentioned blog for execution of the model through Goog
 
 •	Third step is to open colab file and follow the below steps to execute the model and train it.
 
+•   If you have doubts in executing the colab part, you can access to my .ipynb files uploaded.
+
 •	Firstly we need to select tensorflow version 1. Because the model works fine with the tensorflow 1. Follow the below command.
 
     %tensorflow_version 1.x
