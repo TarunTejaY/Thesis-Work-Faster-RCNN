@@ -8,6 +8,10 @@ If it is done, Install two github repositories inorder to work with the model.
 ·	Download the full tensorflow models from the mentioned repository
 
     https://github.com/tensorflow/models
+    
+·   In order to execute the model in colab, I have used below mentioned reference.
+    
+    https://medium.com/analytics-vidhya/training-an-object-detection-model-with-tensorflow-api-using-google-colab-4f9a688d5e8b
  
 ·	Download another repository by edjeelectronics
 
