@@ -1,6 +1,8 @@
 # Thesis-work on Detection of underground burried networks using Gpr Images by Faster RCNN
 
-**INTRODUCTION**
+***INTRODUCTION***
+This work was done as an Internship at CEREMA Laboratory, Angers.
+This work was supervised and guided by David GUILBERT, Researcher And JAUFER Rakeeb, Researcher.
 
 **INSTALLATIONS**
 
@@ -259,7 +261,7 @@ I have followed the below mentioned blog for execution of the model through Goog
 
     python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_resnet50_coco.config
 
-•	In the above command replace the config file with your respective config file you choose faster_rcnn_inception_v2_coco.config/ faster_rcnn_resnet101_coco.config etc. 
+•	In the above command replace the config file with your respective config file you choose faster_rcnn_inception_v2_coco.config/ faster_rcnn_resnet101_coco.config if you like to work on them. 
 
 •	Now the model gets trained and run it upto 60000 steps to get better precision and recall.
 
@@ -269,7 +271,7 @@ I have followed the below mentioned blog for execution of the model through Goog
 
     python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_resnet50_coco.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
 
-•	In the above command replace the config file with your respective config file you choose faster_rcnn_inception_v2_coco.config/ faster_rcnn_resnet101_coco.config etc
+•	In the above command replace the config file with your respective config file you choose faster_rcnn_inception_v2_coco.config/ faster_rcnn_resnet101_coco.config if you like to work on them.
 
 •	Then open the object detection folder and open the respective python file to test your model. In my case i have used Object_detection_image.py and Object_detection_video.py
 
@@ -299,8 +301,8 @@ I have followed the below mentioned blog for execution of the model through Goog
 
 •	Final step is to check the validation results of the model performance through the metrics. It can be checked by following command.
 
-    !python /content/gdrive/MyDrive/tensorflow/models/research/object_detection/model_main.py --model_dir = /content/gdrive/MyDrive/tensorflow/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28 --pipeline_config_path=/content/gdrive/MyDrive/tensorflow/models/research/object_detection/training/pipeline.config --checkpoint_dir=/content/gdrive/MyDrive/tensorflow/models/research/object_detection/training
+    !python /content/gdrive/MyDrive/tensorflow/models/research/object_detection/model_main.py --model_dir = /content/gdrive/MyDrive/tensorflow/models/research/object_detection/faster_rcnn_resnet50_coco_2018_01_28 --pipeline_config_path=/content/gdrive/MyDrive/tensorflow/models/research/object_detection/training/pipeline.config --checkpoint_dir=/content/gdrive/MyDrive/tensorflow/models/research/object_detection/training
 
-•	Change the model name in command with respect to the model you use like faster_rcnn_resnet50_coco_2018_01_28 or faster_rcnn_resnet101_coco_2018_01_28. 
+•	Change the model name in command with respect to the model you use like faster_rcnn_inception_v2_coco_2018_01_28 or faster_rcnn_resnet101_coco_2018_01_28. 
 
 •   If you follow the above mentioned steps, You can easily execute Faster RCNN model.
