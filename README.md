@@ -1,9 +1,5 @@
 # Thesis-work on Detection of underground burried networks using Gpr Images by Faster RCNN
 
-**INTRODUCTION**
-
-This work was done as an Internship at CEREMA Laboratory, Angers.
-This work was supervised and guided by David GUILBERT, Researcher And JAUFER Rakeeb, Researcher.
 
 **MODEL EXECUTION**
 
