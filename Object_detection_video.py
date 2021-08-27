@@ -116,7 +116,7 @@ while(video.isOpened()):
         min_score_thresh=0.60)
 
     # All the results have been drawn on the frame, so it's time to display it.
-    cv2.imshow(frame)
+    cv2_imshow(frame)
 
     # Press 'q' to quit
     if cv2.waitKey(1) == ord('q'):
