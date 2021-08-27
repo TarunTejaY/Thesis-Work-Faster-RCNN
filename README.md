@@ -259,7 +259,7 @@ I have followed the below mentioned blog for execution of the model through Goog
 
 •	Now paste the following command to run the model.
 
-    python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_resnet50_coco.config
+    !python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_resnet50_coco.config
 
 •	In the above command replace the config file with your respective config file you choose faster_rcnn_inception_v2_coco.config/ faster_rcnn_resnet101_coco.config if you like to work on them. 
 
@@ -269,7 +269,7 @@ I have followed the below mentioned blog for execution of the model through Goog
 
 •	Now that training is complete, the last step is to generate the frozen inference graph (.pb file). From the \object_detection folder, issue the following command, where “XXXX” in “model.ckpt-XXXX” should be replaced with the highest-numbered .ckpt file in the training folder by giving the number of last trained ckpt at XXXX place in the below code.
 
-    python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_resnet50_coco.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+    !python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_resnet50_coco.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
 
 •	In the above command replace the config file with your respective config file you choose faster_rcnn_inception_v2_coco.config/ faster_rcnn_resnet101_coco.config if you like to work on them.
 
