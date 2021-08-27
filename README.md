@@ -236,9 +236,9 @@ I have followed the below mentioned blog for execution of the model through Goog
 
 •	Line 106. Change fine_tune_checkpoint to:
 
-    fine_tune_checkpoint : "C:/tensorflow1/models/research/object_detection/faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt" 
+    fine_tune_checkpoint : "faster_rcnn_resnet50_coco_2018_01_28/model.ckpt" 
 
-•	Replace with faster_rcnn_resnet50_coco_2018_01_28 or faster_rcnn_resnet101_coco_2018_01_28 based on the model you choose.
+•	Replace with faster_rcnn_inception_v2_coco_2018_01_28 or faster_rcnn_resnet101_coco_2018_01_28 based on the model you choose.
 
 •	Lines 123 and 125. In the train_input_reader section, change input_path and label_map_path to:
     
@@ -253,21 +253,21 @@ I have followed the below mentioned blog for execution of the model through Goog
 
 •	Save the file after the changes have been made. That’s it! The training job is all configured and ready to go!
 
-•	No paste the following command to run the model.
+•	Now paste the following command to run the model.
 
-    python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_inception_v2_pets.config
+    python train.py --logtostderr --train_dir=training/ --pipeline_config_path=training/faster_rcnn_resnet50_coco.config
 
-•	In the above command replace the config file with your respective config file you choose faster_rcnn_resnet50_coco.config/ faster_rcnn_resnet101_coco.config etc. 
+•	In the above command replace the config file with your respective config file you choose faster_rcnn_inception_v2_coco.config/ faster_rcnn_resnet101_coco.config etc. 
 
 •	Now the model gets trained and run it upto 60000 steps to get better precision and recall.
 
 •	After reaching to the required step count interupt the cell running.
 
-•	Now that training is complete, the last step is to generate the frozen inference graph (.pb file). From the \object_detection folder, issue the following command, where “XXXX” in “model.ckpt-XXXX” should be replaced with the highest-numbered .ckpt file in the training folder 
+•	Now that training is complete, the last step is to generate the frozen inference graph (.pb file). From the \object_detection folder, issue the following command, where “XXXX” in “model.ckpt-XXXX” should be replaced with the highest-numbered .ckpt file in the training folder by giving the number of last trained ckpt at XXXX place in the below code.
 
-    python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
+    python export_inference_graph.py --input_type image_tensor --pipeline_config_path training/faster_rcnn_resnet50_coco.config --trained_checkpoint_prefix training/model.ckpt-XXXX --output_directory inference_graph
 
-•	In the above command replace the config file with your respective config file you choose faster_rcnn_resnet50_coco.config/ faster_rcnn_resnet101_coco.config etc
+•	In the above command replace the config file with your respective config file you choose faster_rcnn_inception_v2_coco.config/ faster_rcnn_resnet101_coco.config etc
 
 •	Then open the object detection folder and open the respective python file to test your model. In my case i have used Object_detection_image.py and Object_detection_video.py
 
