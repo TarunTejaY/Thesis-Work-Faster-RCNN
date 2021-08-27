@@ -103,7 +103,7 @@ Do this by issuing the following commands (from any directory):
 
 ·	Execute the following commands to run setup.py file.
 
-·	 Note: Before running we need to change the setup.py from tensorflow1\models\research\object_detction\tf1 to tensorflow1\models\research\ then run the below command.
+·	 Note: Before running we need to change the setup.py from C:\tensorflow1\models-master\research\object_detection\packages\tf1 to C:\tensorflow1\models-master\research\ then run the below command.
 
      python setup.py build
      python setup.py install
