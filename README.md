@@ -128,7 +128,9 @@ Do this by issuing the following commands (from any directory):
     cd C:\tensorflow1\models\research\object_detection
  
     python xml_to_csv.py
- 
+
+.   If the above command don't work then try to execute xml_to_csv.py file in pycharm or jupyter notebook by opening it from the folder location.
+
 ·	open the generate_tfrecord.py using text editor and the change the label(). In my case i am detecting only pipe so i have give pipe. If you need to detect multiple things then you can gives all the labels you want to detect
 
     # TO-DO replace this with label map
@@ -212,6 +214,11 @@ I have followed the below mentioned blog for execution of the model through Goog
 
     %cd /content/gdrive/My Drive/tensorflow/models/research/object_detection/builders/
     !python model_builder_test.py
+    
+•   After running model builder test change the directory to 
+
+    %cd /content/gdrive/My Drive/tensorflow/models/research/object_detection
+
     
 • We need to create train.record and test.record files
 
