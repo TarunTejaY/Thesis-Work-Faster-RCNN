@@ -112,7 +112,7 @@ vis_util.visualize_boxes_and_labels_on_image_array(
     min_score_thresh=0.60)
 
 # All the results have been drawn on image. Now display the image.
-cv2.imshow(image)
+cv2_imshow(image)
 
 # Press any key to close the image
 cv2.waitKey(0)
