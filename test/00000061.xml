@@ -1,0 +1,26 @@
+<annotation>
+	<folder>obj</folder>
+	<filename>00000061.jpg</filename>
+	<path>C:\Users\tarun\Downloads\10000\data\obj\00000061.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>600</height>
+		<depth>1</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pipe</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>7</ymin>
+			<xmax>63</xmax>
+			<ymax>328</ymax>
+		</bndbox>
+	</object>
+</annotation>
